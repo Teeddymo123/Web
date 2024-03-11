@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="khung-main" >
+        <div class="khung-anh"></div>
+        <div class="information-exam">
+
+        </div>
+        <div class="icon-menu hide"><i class="fa-solid fa-bars"></i></div>
+        <div class="khung-menu ">
+            <div class="icon-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="khung-information">
+                <div class="anh-dai-dien">
+                    <img src="img/2.png" alt="" class="anh">
+                </div>
+                <div class="thong-tin">
+                    adasd
+                    <br>
+                    ádasdasd
+                    <br>
+                    ádasdasd
+                    <br>
+                    <br>
+                    <div class="chinh-sua">
+                        <a href=""><p> Chỉnh sửa thông tin </p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="khung-hieu-ung">
+                <div class="frame">
+                    <div class="text"><a href=""><p>< - - - - - Thông tin điểm - - - - -></p></a></div>
+                    
+                </div>
+                <div class="frame">
+                    <div class="text"><a href=""><p>< - - - - - Thông tin nhóm - - - - -></p></a></div>
+                    
+                    
+                </div>
+                <div class="frame">
+                    <div class="text"><a href=""><p>< - - - - - -Danh sách thi- - - - - -></p></a></div>
+                    
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+    <script>
+        const button_menu = document.querySelector('.icon-menu');
+        const button_close = document.querySelector('.icon-close');
+        const khung_menu = document.querySelector('.khung-menu');
+        button_menu.addEventListener("click",function(){
+            button_menu.classList.add("hide");
+            khung_menu.classList.remove("hide");
+        });
+        button_close.addEventListener("click",function(){
+            khung_menu.classList.add("hide");
+            button_menu.classList.remove("hide");
+        });
+
+    </script>
+</html>
